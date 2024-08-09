@@ -9,6 +9,7 @@ size = Vector2(121, 121)
 [node name="Node2D" type="Node2D"]
 
 [node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(424, 236)
 script = ExtResource("1_a5er5")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
