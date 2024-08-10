@@ -35,6 +35,10 @@ func get_attack_point_from_direction(x_direction: int, y_direction: int) -> Stri
 func _process(delta):
 	var x_direction = Input.get_axis("left", "right")
 	var y_direction = Input.get_axis("up", "down")
+	
+	if !is_lunge_attacking and current_weapon != null:
+		current_weapon.queue_free()
+
 	if Input.is_action_just_pressed("attack"):
 		# if moving lunge
 		if (x_direction or y_direction) and !is_lunge_attacking:
@@ -45,9 +49,6 @@ func _process(delta):
 			current_weapon = weapon_scene.instantiate()
 			var attack_point = get_node(attack_point_str)
 			attack_point.add_child(current_weapon)
-	
-	if !is_lunge_attacking and current_weapon != null:
-		current_weapon.queue_free()
 
 
 func _physics_process(delta):
