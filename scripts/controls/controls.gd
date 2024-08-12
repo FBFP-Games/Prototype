@@ -1,4 +1,4 @@
-extends Object
+extends Node
 class_name Controls
 class Player:
 	extends Object
