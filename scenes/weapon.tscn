@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmoiyu61k7u72"]
-
-[ext_resource type="Texture2D" uid="uid://cuxx32h6l5181" path="res://assets/weapon.png" id="1_40fn7"]
-
-[node name="weapon" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -11)
-texture = ExtResource("1_40fn7")

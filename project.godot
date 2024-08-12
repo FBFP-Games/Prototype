@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="FBFP-Game-Prototype"
-run/main_scene="res://scenes/test.tscn"
+run/main_scene="res://scenes/worlds/test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://assets/icon.svg"
 
 [display]
 
